@@ -1,0 +1,80 @@
+/* Wander Nepal - shared stylesheet */
+:root{--green:#174c3c;--green-dark:#10382d;--orange:#e89b55;--cream:#f7f6f0;--ink:#202a26;--muted:#66736d;--white:#fff;--shadow:0 16px 45px rgba(22,48,38,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);line-height:1.7;background:#fff}
+img{display:block;width:100%;object-fit:cover}
+a{text-decoration:none;color:inherit}
+.container{width:min(1140px,calc(100% - 48px));margin-inline:auto}
+.site-header{height:78px;background:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 2px 18px rgba(0,0,0,.06)}
+.navbar{height:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:"Playfair Display",serif;font-size:1.55rem;font-weight:800;color:var(--green);display:flex;align-items:center;gap:9px}
+.logo i{color:var(--orange);font-size:1.65rem}.logo span{color:var(--orange);margin-left:-8px}
+.nav-links{display:flex;align-items:center;gap:34px;list-style:none}
+.nav-links a{font-size:.94rem;font-weight:600;color:#52615a;transition:.2s}
+.nav-links a i{margin-right:7px;color:var(--orange);font-size:.9rem}
+.nav-links a:hover,.nav-links a.active{color:var(--green)}
+.menu-toggle{display:none;border:0;background:none;color:var(--green);font-size:1.5rem;cursor:pointer}
+.hero{min-height:650px;position:relative;display:flex;align-items:center;color:#fff;background:url("https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=2000&q=90") center 48%/cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,28,25,.78),rgba(8,28,25,.35) 58%,rgba(8,28,25,.08))}
+.hero-content{position:relative;padding-block:100px}
+.eyebrow{font-size:.75rem;letter-spacing:2.3px;font-weight:700;color:var(--orange);margin-bottom:13px}
+.hero h1,.page-hero h1{font-family:"Playfair Display",serif;font-size:clamp(3.1rem,7vw,5.8rem);line-height:1.06;max-width:760px}
+.hero h1 span{color:#f0b879}
+.hero-description{max-width:560px;color:#edf1ed;font-size:1.1rem;margin:23px 0 30px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 22px;border-radius:5px;font-weight:700;font-size:.92rem;border:1px solid transparent;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--orange);color:#1e2b25}.btn-primary:hover{background:#f2b575}
+.btn-outline{border-color:rgba(255,255,255,.8);color:#fff}.btn-outline:hover{background:#fff;color:var(--green)}
+.btn-light{background:#fff;color:var(--green)}.scroll-cue{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);font-size:.78rem;letter-spacing:1px;color:#fff;opacity:.85}.scroll-cue i{margin-right:8px}
+.section{padding-block:90px}
+.section-heading{text-align:center;margin-bottom:38px}
+.section-heading h2,.experience-layout h2,.about-copy h2,.contact-info h2,.cta h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4vw,3rem);line-height:1.2;color:var(--green);margin-bottom:12px}
+.section-heading>p:last-child{color:var(--muted)}
+.destination-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.destination-card{border-radius:9px;overflow:hidden;background:#fff;box-shadow:var(--shadow);transition:transform .25s}
+.destination-card:hover{transform:translateY(-7px)}
+.destination-card img{height:235px}
+.card-content{padding:23px}
+.card-tag{font-size:.7rem;text-transform:uppercase;letter-spacing:1.4px;font-weight:700;color:#b56c2c}
+.card-content h3{font-family:"Playfair Display",serif;font-size:1.55rem;color:var(--green);margin:5px 0}
+.card-content p{font-size:.92rem;color:var(--muted);margin-bottom:17px}
+.card-content a{font-size:.88rem;font-weight:700;color:var(--green)}.card-content a i{color:var(--orange);margin-left:5px}
+.experience-section,.values-section{background:var(--cream);padding-block:85px}
+.experience-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.experience-layout>div:first-child>p:not(.eyebrow){color:var(--muted);margin:16px 0 25px}
+.feature-list{display:grid;gap:24px}
+.feature{display:flex;gap:18px;align-items:flex-start}
+.feature>i,.value-card>i{width:52px;height:52px;flex:0 0 52px;border-radius:50%;display:grid;place-items:center;background:#e9efe9;color:var(--green);font-size:1.2rem}
+.feature h3,.value-card h3{color:var(--green);margin-bottom:4px}.feature p,.value-card p{font-size:.92rem;color:var(--muted)}
+.cta{margin-block:80px;padding:48px 55px;background:var(--green);border-radius:10px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.cta h2{color:#fff;margin-bottom:8px}.cta p:not(.eyebrow){color:#d9e5de}.cta .eyebrow{margin-bottom:8px}
+.footer{background:#102f27;color:#dce6df;padding:30px 0}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-logo{color:#fff;font-size:1.35rem}.footer-inner>p{font-size:.85rem;color:#c0cec6}.copyright{font-size:.8rem!important}
+.page-hero{padding:100px 0;color:#fff;background-size:cover;background-position:center;position:relative}
+.page-hero:before{content:"";position:absolute;inset:0;background:rgba(9,35,29,.62)}
+.page-hero .container{position:relative}.page-hero h1{font-size:clamp(2.8rem,6vw,4.6rem)}.page-hero p:not(.eyebrow){font-size:1.05rem;color:#edf2ed;margin-top:13px}
+.about-hero{background-image:url("https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1900&q=85")}
+.contact-hero{background-image:url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1900&q=85")}
+.about-layout{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.about-image img{height:440px;border-radius:9px;box-shadow:var(--shadow)}
+.about-copy>p:not(.eyebrow){color:var(--muted);margin:13px 0}.about-copy .btn{margin-top:15px}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.value-card{background:#fff;padding:30px;border-radius:8px;box-shadow:0 8px 28px rgba(22,48,38,.06)}
+.value-card>i{margin-bottom:17px}
+.contact-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:75px;align-items:start}
+.contact-info>p:not(.eyebrow){color:var(--muted);margin:14px 0 30px}
+.contact-detail{display:flex;gap:16px;align-items:center;margin:22px 0}
+.contact-detail>i{width:46px;height:46px;border-radius:50%;background:#edf2ed;color:var(--green);display:grid;place-items:center}
+.contact-detail h3{font-size:1rem;color:var(--green)}.contact-detail p{color:var(--muted);font-size:.92rem}
+.small-note{font-size:.78rem;color:#89938d!important}
+.contact-form{padding:34px;background:#fff;box-shadow:var(--shadow);border-radius:9px}
+.contact-form h2{font-family:"Playfair Display",serif;color:var(--green);font-size:1.8rem;margin-bottom:22px}
+.form-row{margin-bottom:17px}.form-row label{display:block;font-size:.88rem;font-weight:700;margin-bottom:6px}
+.form-row input,.form-row textarea{width:100%;padding:12px 14px;border:1px solid #dce3dd;border-radius:5px;font:inherit;font-size:.9rem;outline:none;resize:vertical}
+.form-row input:focus,.form-row textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(23,76,60,.08)}
+.error{display:block;color:#bd3d32;font-size:.78rem;min-height:18px}.form-status{margin-top:14px;font-size:.9rem;font-weight:600;color:var(--green)}
+@media(max-width:800px){.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;padding:20px 24px;box-shadow:0 12px 18px rgba(0,0,0,.08);flex-direction:column;align-items:flex-start;gap:18px}.nav-links.open{display:flex}.hero{min-height:590px}.destination-grid,.values-grid{grid-template-columns:repeat(2,1fr)}.experience-layout,.about-layout,.contact-layout{grid-template-columns:1fr;gap:38px}.about-image img{height:350px}.cta{padding:38px;align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.container{width:min(100% - 32px,1140px)}.hero{min-height:570px;background-position:58% center}.hero-content{padding-block:75px}.hero h1{font-size:3.25rem}.hero-description{font-size:1rem}.section{padding-block:65px}.destination-grid,.values-grid{grid-template-columns:1fr}.destination-card img{height:220px}.experience-section,.values-section{padding-block:65px}.cta{margin-block:55px;padding:30px 24px}.footer-inner{flex-direction:column;align-items:flex-start}.page-hero{padding:75px 0}.about-image img{height:270px}.contact-form{padding:24px 19px}}
